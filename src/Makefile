@@ -26,10 +26,14 @@ EXTRA=
 EXTRALIBS=
 OPENCVLDLIBS= -lopencv_highgui \
 							-lopencv_core \
-							-lopencv_imgproc
+							-lopencv_imgproc \
+							-lopencv_objdetect \
+							-lopencv_features2d
 OPENCVLIBS= /usr/local/lib/libopencv_highgui.so \
 						/usr/local/lib/libopencv_core.so \
-						/usr/local/lib/libopencv_imgproc.so
+						/usr/local/lib/libopencv_imgproc.so \
+						/usr/local/lib/libopencv_objdetect.so \
+						/usr/local/lib/libopencv_features2d.so
 LDLIBS= ${OPENCVLDLIBS}
 
 # turn depend_flag off
